@@ -4,10 +4,12 @@ h1 {
 .container-fluid {
 	background: brown;
 }
-
 .row {
 	background: orange;
 	margin: 0;
+}
+.padzero {
+	padding: 0;
 }
 .navbar-right {
 	margin: 0;
@@ -44,6 +46,26 @@ h1 {
 	background: pink;
 	min-height: 10px;
 }
-.padzero {
-	padding: 0;
+.aside {
+	padding-right: 15px;
+}
+.aside .nav-pills {
+	padding-bottom: 20px;
+}
+.aside .nav-pills a {
+	background: red;
+	margin-bottom: 6px;
+	border: 1px solid #e8ebef;
+	border-left: 0;
+	border-radius: 0 4px 4px 0;
+	font-size: 1em;
+}
+.test_cont {
+	background: purple;
+	min-height: 50px
+}
+.btn-icon {
+	width: 15px;
+	height: 15px;
+	background: green;
 }
