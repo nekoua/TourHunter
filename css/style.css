@@ -1,25 +1,49 @@
 h1 {
 	background: red;
 }
+.container-fluid {
+	background: brown;
+}
+
 .row {
 	background: orange;
+	margin: 0;
 }
-.col-md-1 {
-	background: blue;
-	min-height: 100px;
+.navbar-right {
+	margin: 0;
 }
-.col-md-4 {
-	background: lime;
+.color-test {
+	background: grey;
+	
+	/*min-height: 80px;*/
 }
-.col-md-6 {
+.middle-block {
 	background: purple;
 }
-.col-xs-12 {
-	background: blue;
+.navbar-brand {
+	background: purple;
+	padding: 0;
+	height: 100%;
 }
-.col-sm-6 {
-	background: cyan;	
+.for-grid {
+	background: cyan;
+	border: 1px solid green;
+	min-height: 70px;
+	padding: 0;
 }
-.col-md-8 {
-	background: grey;	
+.logo {
+	margin: 4px 0;
+	background: red;
+	display: block;
+	width: 100%;
+}
+.navbar_vertical {
+	padding: 20px;
+}
+.contact_inform {
+	background: pink;
+	min-height: 10px;
+}
+.padzero {
+	padding: 0;
 }
