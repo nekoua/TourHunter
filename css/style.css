@@ -1,0 +1,25 @@
+h1 {
+	background: red;
+}
+.row {
+	background: orange;
+}
+.col-md-1 {
+	background: blue;
+	min-height: 100px;
+}
+.col-md-4 {
+	background: lime;
+}
+.col-md-6 {
+	background: purple;
+}
+.col-xs-12 {
+	background: blue;
+}
+.col-sm-6 {
+	background: cyan;	
+}
+.col-md-8 {
+	background: grey;	
+}
