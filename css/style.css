@@ -1,80 +1,38 @@
 h1 {
 	background: red;
 }
-.container-fluid {
+.container-fluide {
 	background: brown;
 }
 .row {
 	background: orange;
+	opacity: .7;
+}
+.color-test {
+	background: grey;
+}
+.navbar-header {
+	height: 100%;
+}
+.border {
+	border: 1px solid #000;
+}
+.margzero {
 	margin: 0;
 }
 .padzero {
 	padding: 0;
 }
-.navbar-right {
-	margin: 0;
-}
-.color-test {
-	background: grey;
-	
-	/*min-height: 80px;*/
-}
-.middle-block {
-	background: purple;
-}
-.navbar-brand {
-	background: purple;
-	padding: 0;
-	height: 100%;
-}
-.for-grid {
-	background: cyan;
-	border: 1px solid green;
-	min-height: 70px;
-	padding: 0;
-}
-.logo {
-	margin: 4px 0;
-	background: red;
-	display: block;
-	width: 100%;
-}
-.navbar_vertical {
-	padding: 20px;
-}
-.contact_inform {
-	background: pink;
-	min-height: 10px;
-}
-.aside {
+
+.nav-cont .row {
+	padding-left: 15px;
 	padding-right: 15px;
 }
-.aside .nav-pills {
-	padding-bottom: 20px;
+.nav-head {
+	padding-right: 0;
 }
-.aside .nav-pills a {
-	background: red;
-	margin-bottom: 6px;
-	border: 1px solid #e8ebef;
-	border-left: 0;
-	border-radius: 0 4px 4px 0;
-	font-size: 1em;
-}
-.test_cont {
-	background: purple;
-	min-height: 50px
-}
-.btn-icon {
-	width: 15px;
-	height: 15px;
-	background: green;
-}
-.content_article_cont {
 
-}
-.content_article_cont {
-
-}
-.article_content {
-	border: 1px solid black;
+.tmp-block {
+	background: yellow;
+	min-height: 100px;
 }
