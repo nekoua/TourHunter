@@ -11,9 +11,6 @@ h1 {
 .color-test {
 	background: grey;
 }
-.navbar-header {
-	height: 100%;
-}
 .border {
 	border: 1px solid #000;
 }
@@ -23,57 +20,47 @@ h1 {
 .padzero {
 	padding: 0;
 }
+.navbar {
+	margin-bottom: 33px;
+}
 .nav_vertical_pos {
-	padding-top: 17px;
+	padding: 2% 0 1.4%;
 }
 .nav-cont .row {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-.nav-head {
-	padding-right: 0;
-}
-.nav-head .col-xs-6 {
+.nav_btn_cont {
 	padding: 0;
 }
-.dropup .caret,
-.navbar-fixed-bottom .dropdown .caret {
-  content: "";
-  border-top: 0;
-  border-bottom: 4px dashed;
-  border-bottom: 10px solid \9;
+.nav_btn_cont li {
+	padding: 0;	
 }
-.caret {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 2px;
-  vertical-align: middle;
-  border-top: 10px dashed;
-  border-top: 10px solid \1;
-  border-right: 10px solid transparent;
-  border-left: 10px solid transparent;
+
+.nav_btn_cont .active {
+	border-bottom: 1px solid red;	
 }
-.btn-lg .caret {
-  border-width: 5px 5px 0;
-  border-bottom-width: 0;
-}
-.dropup .btn-lg .caret {
-  border-width: 0 5px 5px;
+.nav_btn_cont li a {
+	padding: 6px 0;
+	font-size: 1.33em;	
 }
 
 .tmp-block {
 	background: yellow;
-	min-height: 100px;
-}
-.hundred {
+	
 }
 .logo_cont {
 	background: pink;
+	padding-top: 0.3%;
+}
+.logo_cont a {
+	padding: 0;
 	height: 100%;
 }
-.logo_frame {
-	padding: 0;
+.logo {
+	width: 100%;
+	
+	border: 1px solid red;
 }
 .nav_btn_cont {
 	font-size: 14px;
@@ -84,7 +71,7 @@ h1 {
 	font-size: 11px;
 }
 .inform_element {
-	line-height: 17px;
+	line-height: 19px;
 }
 .contact_inform div {
 	padding: 0;
@@ -102,17 +89,11 @@ h1 {
 	margin: 0;
 }
 .soft_btn {
-	padding: 6px 0;
+	padding: 6px 0px;
 	float: right;
-	font-size: 14px;
-	
+	font-size: 1.35em;
 	border-radius: 50px 50px 50px 50px;
 }
-
-.soft_btn:nth-child(1) {
-	
-}
-
 .soft_btn_cont .btn-group {
 	background: green;
 	padding: 0;
