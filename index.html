@@ -10,6 +10,8 @@
   <!-- Bootstrap -->
   <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
   <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
   <link href="css/style.css" rel="stylesheet">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -83,7 +85,7 @@
 
           <aside class="col-md-2 aside border">
             <div class="row">
-              <ul class="nav nav-pills nav-stacked">
+              <ul class="nav nav-pills nav-stacked border">
                 <li class="active"><a href="#">All Tours</a></li>
                 <li><a href="#">Load Tours</a></li>
                 <li><a href="#">Evening Shows</a></li>
@@ -95,72 +97,149 @@
 
           <section class="col-md-7 border">
             <div class="row">
-              <article class="col-md-12 border">
+              <article class="col-md-12 slider border">
+                <h3>Phi Phi Islands + Bamboo Island</h3>
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
 
-              </article>
-              <article class="col-md-12 content_article">
-                <h3>About Tour</h3>
-                <div class="article_content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quo id consequatur fugiat perferendis sit odio. Aspernatur dolor quisquam, nemo voluptatibus aut alias, cupiditate non nam odit incidunt facilis magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quo id consequatur fugiat perferendis sit odio. Aspernatur dolor quisquam, nemo</p>  
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="..." alt="...">
+                      <div class="carousel-caption">
+                        ...123...
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="..." alt="...">
+                      <div class="carousel-caption">
+                        ...234...
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="..." alt="...">
+                      <div class="carousel-caption">
+                        ...123...
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon_left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon_right"></span>
+                  </a>
+                </div>
+                <div class="col-md-12 slide_inform">
+                  <div class="row border">
+                    <div class="col-xs-3 border like_share_cont">
+                      <div class="row">
+                        <button type="button" class="btn btn-default btn-xs"><i class="fa fa-heart"></i>Like it</button>
+                        <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share-alt"></i>Share</button>
+                      </div>
+                      <div class="row tour_geo">
+                        <ol class="breadcrumb">
+                          <i class="fa fa-map-marker"></i>
+                          <li><a href="#">Phuket</a></li>
+                          <li class="active">Thailand</li>
+                        </ol>
+                      </div>
+                    </div>
+                    <div class="col-xs-3 col-xs-offset-6 border">
+                      <div class="row">
+                        <fieldset class="half-stars-example">
+
+                          
+                            <div class="rating-group">
+                              <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                              <label title="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                              <label title="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                              <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                              <label title="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                              <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                              <label title="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                              <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                              <label title="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                              <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                              <label title="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                              <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                              <label title="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                              <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                              <label title="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                              <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                              <label title="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                              <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                              <label title="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                              <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                              <label title="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                              <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                            </div>
+                          
+
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </article>
-              <article class="col-md-12 content_article">
-                <h3>Interary</h3>
-                <div>
-                  <ul>
-                   <li>Meet at the starting point</li>
-                   <li>Raft for 30-45 minutes</li>
-                   <li>Stop for lunch</li>
-                   <li>Raft for 45 -1 hr.</li>
-                   <li>Pick up at designated point</li>
-                 </ul> 
-               </div>
-             </article>
-             <article class="col-md-12 content_article">
-              <h3>PickUp</h3>
-              <div>
-                <p>Please arrive at least 30 minutes prior to the tour time to ensure proper gear assignment.</p>
-              </div>
-            </article>
-            <article class="col-md-12 content_article">
-              <h3>Drop Off</h3>
-              <div>
-                <p>You will be returned to the starting point by van.</p>
-              </div>
-            </article>
-            <article class="col-md-12 content_article">
-              <h3>Interary</h3>
-              <div>
+              <article class="col-md-12 border tour_block_info">
+                <h4><span class="glyphicon glyphicon-star"></span>About Tour</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quo id consequatur fugiat perferendis sit odio. Aspernatur dolor quisquam, nemo voluptatibus aut alias, cupiditate non nam odit incidunt facilis magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quo id consequatur fugiat perferendis sit odio. Aspernatur dolor quisquam, nemo</p>
+              </article>
+              <article class="col-md-12 border tour_block_info">
+                <h4><span class="glyphicon glyphicon-star"></span>Interary</h4>
                 <ul>
-                 <li>Camera (waterproof)</li>
-                 <li>Extra change of clothes and shoes</li>
-               </ul> 
-             </div>
-           </article>
-           <article class="col-md-12 content_article">
-            <h3>Category Tour</h3>
-            <div class="article_content">
-              <h6>Hunting Tour</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quo id consequatur fugiat perferendis sit odio. Aspernatur dolor quisquam, nemo voluptatibus aut alias, cupiditate non nam odit incidunt facilis magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quo id consequatur fugiat perferendis sit odio. Aspernatur dolor quisquam, nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-
-              Soluta quo id consequatur fugiat perferendis sit odio. Aspernatur dolor quisquam, nemo voluptatibus aut alias, cupiditate non nam odit incidunt facilis magnam. Lorem ipsum dolor sit ametuo id consequatur fugiat perferendis sit odio.</p>  
+                  <li>Meet at the starting point</li>
+                  <li>Raft for 30-45 minutes</li>
+                  <li>Stop for lunch</li>
+                  <li>Raft for 45 -1 hr.</li>
+                  <li>Pick up at designated point</li>
+                </ul>
+              </article>
+              <article class="col-md-12 border tour_block_info">
+                <h4><span class="glyphicon glyphicon-star"></span>PickUp</h4>
+                <p>Please arrive at least 30 minutes prior to the tour time to ensure proper gear assignment.</p>
+              </article>
+              <article class="col-md-12 border tour_block_info">
+                <h4><span class="glyphicon glyphicon-star"></span>Drop Off</h4>
+                <p>You will be returned to the starting point by van.</p>
+              </article>
+              <article class="col-md-12 border tour_block_info">
+                <h4><span class="glyphicon glyphicon-star"></span>Things to bring</h4>
+                <ul>
+                  <li>Camera (waterproof)</li>
+                  <li>Extra change of clothes and shoes</li>
+                </ul>
+              </article>
+              <article class="col-md-12 border tour_block_info">
+                <h4><span class="glyphicon glyphicon-star"></span>Category Tour</h4>
+                <h5>Hunting Tour</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quo id consequatur fugiat perferendis sit odio. Aspernatur dolor quisquam, nemo voluptatibus aut alias, cupiditate non nam odit incidunt facilis magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quo id consequatur fugiat perferendis sit odio. Aspernatur dolor quisquam, nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Soluta quo id consequatur fugiat perferendis sit odio. Aspernatur dolor quisquam, nemo voluptatibus aut alias, cupiditate non nam odit incidunt facilis magnam. Lorem ipsum dolor sit ametuo id consequatur fugiat perferendis sit odio.</p>
+              </article>
             </div>
-          </article>
-        </div>
-      </section>
+          </section>
 
-    </div>        
-  </div>
+        </div>        
+      </div>
 
 
 
 
 
-</div><!-- /wrapper -->
+    </div><!-- /wrapper -->
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-</body>
-</html>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  </html>
