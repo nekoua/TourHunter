@@ -134,8 +134,8 @@ h1 {
 	background: purple;
 }
 .carousel-control {
-	text-shadow: 0 1px 2px rgba(255, 255, 255, 1);
-	background-color: rgba(255, 255, 255, 1);
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0);
+	background-color: #cececd;
 	opacity: 1;
 	bottom: 0;
 	width: 36px;
@@ -144,27 +144,54 @@ h1 {
 	left: 3%;
 	border-radius: 50%;
 }
+.carousel-control i {
+	line-height: 115%;
+	margin: 0 auto;
+	color: #2d4251;
+	font-size: 1.5em;
+}
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .0001) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+.carousel-control.left i {
+	color: #ffffff;
+	margin-left: -0.1em;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .9);
+}
 .carousel-control.right {
-	right: 3%;
+  right: 3%;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x;
 }
-.carousel-control .glyphicon {
-	position: absolute;
-	border-radius: 50%;
-	margin: 20%;
-	top: 0;
-	left: 0;
-	width: 60%;
-	height: 60%;
-		
+.carousel-control.right i {
+	margin-right: -0.1em;
 }
-.glyphicon_left {
-	background: url(../img/sprite/left-arrow.png) no-repeat 30% 00%;
+.carousel-indicators {
+  bottom: 16px;
 }
-.glyphicon_right {
-	background: url(../img/sprite/left-arrow.png) no-repeat 30% 00%;
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, .5);
+  border: none;
+  border-radius: 10px;
 }
-.tour_block_info .glyphicon {
-	padding-right: 1%;
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 1px;
+  background-color: #fff;
 }
 .tour_block_info h4 {
 	padding: 1.1% 0 1.1%;
@@ -222,72 +249,58 @@ h1 {
 .rating_cont {
 	position: relative;
 }
-/*######## rating stars ###########*/
-
-fieldset, label { margin: 0; padding: 0; }
-
 .rating { 
   border: none;
   float: left;
+  padding-left: 12%;
 }
-
 .rating > input { display: none; } 
 .rating > label:before { 
-  margin: 5px;
-  font-size: 1.25em;
+  margin: 0px 3px;
+  font-size: 1.30em;
   font-family: FontAwesome;
   display: inline-block;
   content: "\f006";
-  background: grey;
-  /*width: 5.5%;*/
+  color: #1988e9;
+  width: 60%;
 }
-
-/*.rating > .full:before {
-	/*content: "\f005";	*/
-	
-/*	background: blue;
-	position: relative;
-}*/
-
 .rating > .half:before { 
   width: 5.5%;
-  position: absolute;
-	background: yellow; 
+  position: absolute; 
 }
-
 .rating > label { 
-	
 	float: right; 
 }
-
-.rating > input:checked ~ .half:before, /* show gold star when clicked */
-.rating:not(:checked) > .half:hover:before { color: red; content: "\f089"; } /* hover previous stars in list */
-
-
-.rating > input:checked ~ .full:before, /* show gold star when clicked */
-.rating:not(:checked) > .full:hover:before/* /* hover current star 
-.rating:not(:checked) > label:hover ~ label*/ { color: red; content: "\f005"; } /* hover previous stars in list */
-
-
-.rating > input:checked + label:hover, /* hover current star when changing rating */
-.rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating > input:checked ~ label:hover ~ label { color: lime; content: "\f005"; z-index: 10; }
-
-
-/*.rating > input:checked + .full:hover:before, 
-.rating > input:checked ~ .full:hover:before,
-.rating > input:checked + .half:hover:before, 
-.rating > input:checked ~ .half:hover:before,*/
-
-
-
-.rating:not(:checked) > .half:hover:before ~ .rating:checked
-
-{ color: lime; }
-
-
-/*#################################*/
+.rating > input:checked ~ label:before,
+ .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label:before {
+	content: "\f005";
+}
+.rating > input:checked ~ .half:before,
+ .rating:not(:checked) > .half:hover:before {
+  content: "\f089"; 
+}
+.rating > input:checked + label:hover,
+ .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label,
+   .rating > input:checked ~ label:hover ~ label:before {
+  content: "\f005";
+} 
+.quantity_like  {
+	float: right;
+	font-size: 1.0em;
+	background: red;
+	padding: 1px 0;
+}
+.score_rating {
+	
+}
+.score_rating_descript {
+	
+}
+.quantity_like div {
+	float: right;
+}
 .tour_block_info ul {
 	line-height: 175%;	
 }
@@ -296,4 +309,63 @@ fieldset, label { margin: 0; padding: 0; }
 }
 .tour_block_info h5 {
 	padding-left: 15px;
+}
+.tour_attribute {
+	border: none;
+	border-radius: 6px;
+}
+.tour_attribute .panel-heading{
+	background: #1988e9;
+	border: 2px solid #3899ed;
+	border-radius: 6px;
+	color: #ffffff;
+}
+.tour_attribute_none {
+	border: none;
+	border-radius: 6px;
+}
+.tour_attribute_none .panel-heading{
+	background: #28a6f0;
+	border-radius: 6px;
+	color: #ffffff;	
+}
+.tour_attribute_table {
+	background: grey;
+	border: 1px solid green;
+	margin-bottom: 2.6%;
+}
+.tour_attribute_table td:nth-child(1) {
+	padding-right: 10%;
+	font-size: 0.8em;
+	border: 1px solid green;
+	line-height: 200%;
+	color: red;
+}
+.tour_attribute_table td:nth-child(2) {
+	border: 1px solid green;
+	color: cyan;
+}
+.tour_human_table {
+	background: yellow;
+	
+}
+.tour_human_table td {
+	padding-bottom: 3.3%;
+}
+.tour_human_table td:nth-child(1) {
+	background: yellow;
+	width: 25%;
+	background: blue;
+}
+.tour_human_table .form-control {
+ border-radius: 8px;
+ padding: 21% 12px;
+ color: #000;
+ font-weight: bold;
+}
+.tour_human_table td:nth-child(2) {
+	background: yellow;
+	padding-left: 5%;
+	background: orange;
+	border: 2px solid red;
 }
